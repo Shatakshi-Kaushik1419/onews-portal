@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NewsHub - Online News Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <p>YOUR DAILY NEWS DESTINATION</p>
+            <p id="today"></p>
+        </div>
+
+        <div class="header-main">
+            <h1 class="logo">OnlineNews<span>Hub.</span></h1>
+
+            <div class="header-buttons">
+                <button id="themeButton">🌙 Dark Mode</button>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#news">Latest News</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <!-- Breaking News -->
+    <div class="breaking-news">
+        <strong>BREAKING</strong>
+        <marquee>
+            Welcome to NewsHub! Stay updated with the latest news,
+            technology, sports, education and world events.
+        </marquee>
+    </div>
+
+    <!-- Main Content -->
+    <main id="home">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tag">YOUR NEWS, YOUR WORLD</p>
+
+                <h2>Stay Informed.<br>Stay Ahead.</h2>
+
+                <p>
+                    Get the latest headlines, important updates,
+                    and trending stories from around the world.
+                </p>
+
+                <a href="#news" class="hero-button">Explore News ></a>
+            </div>
+
+            <div class="hero-image">
+                <img src="assets/Images/paper.avif" alt="Newspapers and daily news">
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section id="trending" class="trending-section">
+            <div class="section-heading">
+                <div>
+                    <p class="small-heading">WHAT'S HAPPENING</p>
+                    <h2>Trending Stories </h2>
+                </div>
+            </div>
+
+            <div class="trending-grid">
+
+                <div class="trend-card">
+                    <img src="assets/laptop.avif" alt="Technology">
+                    <span>TECHNOLOGY</span>
+                    <h3>How Technology Is Changing Our Daily Lives</h3>
+                </div>
+
+                <div class="trend-card">
+                    <img src="assets/run.avif" alt="Sports">
+                    <span>SPORTS</span>
+                    <h3>The Growing Popularity of Sports Among Youth</h3>
+                </div>
+
+                <div class="trend-card">
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=600&q=80"
+                        alt="Books and education">
+                    <span>EDUCATION</span>
+                    <h3>New Learning Opportunities for Students</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="news-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="small-heading">READ. EXPLORE. DISCOVER.</p>
+                    <h2>Latest News</h2>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <form id="searchForm" class="search-box">
+                <input type="text" id="searchInput" placeholder="Search news here...">
+
+                <button type="submit">Search 🔍</button>
+            </form>
+
+            <!-- Categories -->
+            <div class="categories">
+                <button class="category-button active" data-category="All">
+                    All News
+                </button>
+
+                <button class="category-button" data-category="India">
+                    India
+                </button>
+
+                <button class="category-button" data-category="World">
+                    World
+                </button>
+
+                <button class="category-button" data-category="Technology">
+                    Technology
+                </button>
+
+                <button class="category-button" data-category="Sports">
+                    Sports
+                </button>
+
+                <button class="category-button" data-category="Education">
+                    Education
+                </button>
+            </div>
+
+            <!-- News Cards -->
+            <div class="news-grid" id="newsContainer">
+
+                <article class="news-card" data-category="India">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=700&q=80"
+                        alt="Indian monument">
+
+                    <div class="news-content">
+                        <span class="news-category">INDIA</span>
+                        <h3>India's Culture and Heritage Continue to Inspire</h3>
+
+                        <p class="news-date">12 October 2026</p>
+
+                        <p class="short-text">
+                            India's rich history and cultural traditions
+                            remain an important part of its identity.
+                        </p>
+
+                        <p class="full-text">
+                            From historic monuments to regional festivals,
+                            India's cultural heritage reflects the diversity
+                            of its people. Preserving historic places and
+                            traditions helps future generations understand
+                            the country's past.
+                        </p>
+
+                        <button class="read-button">Read More ></button>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="Technology">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80"
+                        alt="Electronic technology">
+
+                    <div class="news-content">
+                        <span class="news-category">TECHNOLOGY</span>
+                        <h3>Artificial Intelligence Is Transforming Technology</h3>
+
+                        <p class="news-date">12 October 2026</p>
+
+                        <p class="short-text">
+                            AI tools are becoming increasingly useful
+                            in education, research and everyday tasks.
+                        </p>
+
+                        <p class="full-text">
+                            Artificial intelligence can help people analyse
+                            information, practise new skills and automate
+                            repetitive tasks. Responsible use, privacy
+                            and human supervision remain important.
+                        </p>
+
+                        <button class="read-button">Read More ></button>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="Sports">
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=700&q=80"
+                        alt="Athletes running">
+
+                    <div class="news-content">
+                        <span class="news-category">SPORTS</span>
+                        <h3>Sports Encourage Teamwork and Discipline</h3>
+
+                        <p class="news-date">12 October 2026</p>
+
+                        <p class="short-text">
+                            Participation in sports can help young people
+                            develop teamwork and confidence.
+                        </p>
+
+                        <p class="full-text">
+                            School and community sports give young people
+                            opportunities to learn cooperation, respect
+                            and fair play. Regular participation can also
+                            support physical activity and social skills.
+                        </p>
+
+                        <button class="read-button">Read More →</button>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="Education">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80"
+                        alt="Student studying">
+
+                    <div class="news-content">
+                        <span class="news-category">EDUCATION</span>
+                        <h3>Digital Learning Opens New Doors for Students</h3>
+
+                        <p class="news-date">12 October 2026</p>
+
+                        <p class="short-text">
+                            Online courses and digital resources offer
+                            new ways to develop useful skills.
+                        </p>
+
+                        <p class="full-text">
+                            Students can use online lessons, educational
+                            videos and practice exercises to support
+                            classroom learning. Choosing reliable resources
+                            and maintaining a regular study routine can
+                            make digital learning more effective.
+                        </p>
+
+                        <button class="read-button">Read More ></button>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="World">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=700&q=80"
+                        alt="Modern city skyline">
+
+                    <div class="news-content">
+                        <span class="news-category">WORLD</span>
+                        <h3>Modern Cities Explore Sustainable Development</h3>
+
+                        <p class="news-date">12 October 2026</p>
+
+                        <p class="short-text">
+                            Urban planning can help cities improve
+                            transport, public spaces and the environment.
+                        </p>
+
+                        <p class="full-text">
+                            Sustainable city planning may include public
+                            transport, green spaces, efficient buildings
+                            and improved waste management. These approaches
+                            can help make urban areas more liveable.
+                        </p>
+
+                        <button class="read-button">Read More ></button>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="India">
+                    <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=700&q=80"
+                        alt="Natural landscape and wildlife">
+
+                    <div class="news-content">
+                        <span class="news-category">INDIA</span>
+                        <h3>Protecting Nature Is Everyone's Responsibility</h3>
+
+                        <p class="news-date">12 October 2026</p>
+
+                        <p class="short-text">
+                            Small environmental actions can support
+                            cleaner and healthier communities.
+                        </p>
+
+                        <p class="full-text">
+                            Saving water, reducing single-use plastic,
+                            planting suitable native trees and keeping
+                            public places clean are practical ways
+                            to support environmental protection.
+                        </p>
+
+                        <button class="read-button">Read More ></button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="noNews" class="no-news">
+                No news found. Try another keyword or category.
+            </p>
+
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div>
+                <p class="small-heading">STAY UPDATED</p>
+                <h2>Never Miss a Story!</h2>
+                <p>Enter your email to try our newsletter form.</p>
+            </div>
+
+            <form id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <p id="newsletterMessage"></p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="about">
+        <h2 class="logo">News<span>Hub.</span></h2>
+
+        <p>
+            Your daily destination for headlines, stories and information.
+        </p>
+
+        <p>Created as a student web development project using HTML, CSS and JavaScript.</p>
+
+        <p class="copyright">
+            © 2026 NewsHub. Educational demonstration project.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
